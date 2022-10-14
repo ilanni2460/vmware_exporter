@@ -98,9 +98,9 @@ class VmwareCollector():
             'vm_perf': ['vm_name', 'ds_name', 'host_name', 'dc_name', 'cluster_name'],
             'vmguests': ['vm_name', 'ds_name', 'host_name', 'dc_name', 'cluster_name'],
             'snapshots': ['vm_name', 'ds_name', 'host_name', 'dc_name', 'cluster_name'],
-            'datastores': ['ds_name', 'dc_name', 'ds_cluster'],
-            'hosts': ['host_name', 'dc_name', 'cluster_name'],
-            'host_perf': ['host_name', 'dc_name', 'cluster_name'],
+            'datastores': ['vm_name','ds_name', 'dc_name', 'ds_cluster', 'host_name'],
+            'hosts': ['vm_name','ds_name', 'host_name', 'dc_name', 'cluster_name'],
+            'host_perf': ['vm_name','ds_name', 'host_name', 'dc_name', 'cluster_name'],
         }
 
         # if tags are gonna be fetched 'tags' will be a label too
